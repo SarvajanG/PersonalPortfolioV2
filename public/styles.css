@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Monstserrat, sans-serif";
+}
+
+
+#navbar {
+    background-image: linear-gradient(to bottom right, whitesmoke, silver);
+    display: flex;
+    height: 8vh;
+    justify-content: right;
+}
+
+#button-container {
+    display: flex;
+    width: 20vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbutton {
+    background-image: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 238, 0));
+    height: 4vh;
+    width: 5vw;
+    border: none;
+    border-radius: 50px;
+}
+
+#navbutton:hover {
+    background-image: linear-gradient(to bottom right,  rgb(255, 238, 0), rgb(255, 81, 0));
+}
