@@ -1,15 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Monstserrat, sans-serif";
+    font-family: "Play";
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play-Regular.ttf);
 }
 
 
 #navbar {
-    background-image: linear-gradient(to bottom right, whitesmoke, silver);
+    background-image: linear-gradient(to bottom right, whitesmoke, rgb(182, 182, 182));
     display: flex;
     height: 8vh;
+    width: 100%;
     justify-content: right;
+    position: fixed;
+    z-index: 1000;
 }
 
 #button-container {
@@ -20,13 +32,120 @@
 }
 
 #navbutton {
-    background-image: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 238, 0));
+    background-image: linear-gradient(to bottom right, #ff0000, rgb(255, 255, 255));
     height: 4vh;
     width: 5vw;
     border: none;
     border-radius: 50px;
+    color: whitesmoke;
+    font-size: 1vw;
 }
 
 #navbutton:hover {
-    background-image: linear-gradient(to bottom right,  rgb(255, 238, 0), rgb(255, 81, 0));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(255, 0, 0));
+}
+
+#section-title {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5vw;
+    padding-top: 8vh;
+    font-size: 4vw;
+}
+
+#About {
+    background-color: rgb(235, 235, 235);
+    height: 100vh;
+}
+
+#Projects {
+    background-color: rgb(235, 235, 235);
+}
+
+/*---------------------------------ABOUT ME---------------------------------*/
+
+#about-outer-flex {
+    display: flex;
+    gap: 3vw;
+    padding: 3vw 4vw 3vw 4vw;
+    height: 70vh;
+    width: 90vw;
+}
+
+#about-outer-flex img {
+    height: 70vh;
+}
+
+#about-inner-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5vh;
+    font-size: 1vw;
+}
+
+#about-title {
+    font-size: 3vw;
+}
+
+/*---------------------------------PROJECTS---------------------------------*/
+
+#project-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8vh;
+    gap: 8vh;
+}
+
+#project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 50vw;
+    font-size: 2vw;
+}
+
+#project-item-image {
+    height: 25vh;
+    width: 50vw;
+    position: relative;
+}
+
+#project-item-image img {
+    height: 25vh;
+    width: 50vw;
+    object-fit: cover; /*subject to change*/
+    border-radius: 30px;
+}
+
+.project-item-button {
+    position: absolute;
+    top: 0;
+    right: 0; /* Position the button on the right side */
+    width: 50%; /* Take up half the width of the image */
+    height: 100%; /* Take up the full height of the image */
+    background-color: rgba(0, 0, 0, 0); /* invisible background */
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#github-button {
+    left: 0;
+}
+
+.project-item-button:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken on hover */
+    color: white;
 }
