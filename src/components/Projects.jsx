@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 
+//Projects section compiling all of the project items used in App.jsx 
 export default function Projects() {
     return (
         <div id="Projects">

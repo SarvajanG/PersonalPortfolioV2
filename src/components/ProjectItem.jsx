@@ -1,5 +1,6 @@
 import React from "react";
 
+//Template of a project item used in the projects section
 export default function ProjectItem(props) {
     return (
         <div id="project-item">

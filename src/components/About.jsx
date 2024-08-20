@@ -1,5 +1,6 @@
 import React from "react";
 
+//About section used in App.jsx
 export default function About() {
     return (
         <div id="About">
