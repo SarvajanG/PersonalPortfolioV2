@@ -45,7 +45,7 @@ export default function MobileNav() {
     }, []);
 
     return (
-        <div>
+        <div id="mobile-navigation-container">
             <div id="mobile-navigation">
                 <button onClick={openMobileNav}><img id="mobile-nav-img" src="./svgs/list.svg" alt="menu button"/></button>
             </div>
@@ -54,9 +54,9 @@ export default function MobileNav() {
                     <button onClick={closeMobileNav}><img id="exit-button-container-img" src="./svgs/x-lg.svg" alt="exit menu button"/></button>
                 </div>
                 <div id="navigation-options-container">
-                    <a onClick={closeMobileNav()} href="#About">About</a>
-                    <a onClick={closeMobileNav()} href="#Projects">Projects</a>
-                    <a onClick={closeMobileNav()} href="#Contact">Contact</a>
+                    <a onClick={closeMobileNav} href="#About">About</a>
+                    <a onClick={closeMobileNav} href="#Projects">Projects</a>
+                    <a onClick={closeMobileNav} href="#Contact">Contact</a>
                 </div>
             </div>
         </div>
