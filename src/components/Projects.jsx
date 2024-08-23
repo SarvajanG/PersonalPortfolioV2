@@ -11,19 +11,19 @@ export default function Projects() {
             <div id="project-items-container">
                 <ProjectItem
                 name = "Weather Application"
-                imageLink = "./images/Weather App Preview.jpg"
+                imageLink = "./images/Weather App Preview.JPG"
                 github = "https://github.com/SarvajanG/Weather-App"
                 tryMe = "https://sarvajang.github.io/Weather-App/"
                 />
                 <ProjectItem
                 name = "BMI Calculator"
-                imageLink = "./images/BMI Calculator Preview.jpg"
+                imageLink = "./images/BMI Calculator Preview.JPG"
                 github = "https://github.com/SarvajanG/BMI-Calculator-App"
                 tryMe = "https://sarvajang.github.io/BMI-Calculator-App/"
                 />
                 <ProjectItem
                 name = "Solar System Model"
-                imageLink = "./images/Solar System Model Preview.jpg"
+                imageLink = "./images/Solar System Model Preview.JPG"
                 github = "https://github.com/SarvajanG/Solar-System-Model"
                 tryMe = "https://sarvajang.github.io/Solar-System-Model/"
                 />
