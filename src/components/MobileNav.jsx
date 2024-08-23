@@ -3,7 +3,7 @@ import React, {useEffect} from "react";
 export default function MobileNav() {
 
     function openMobileNav() {
-        if (window.matchMedia("(max-width: 767px)").matches) {
+        if (window.matchMedia("(max-width: 1024px)").matches) {
             const mobileNavigation = document.getElementById("mobile-navigation");
             const mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
 
@@ -15,7 +15,7 @@ export default function MobileNav() {
     }
 
     function closeMobileNav() {
-        if (window.matchMedia("(max-width: 767px)").matches) {
+        if (window.matchMedia("(max-width: 1024px)").matches) {
             const mobileNavigation = document.getElementById("mobile-navigation");
             const mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
 
@@ -27,7 +27,7 @@ export default function MobileNav() {
     }
 
     function displayMobileNav() {
-        if (window.matchMedia("(min-width: 768px)").matches) {
+        if (window.matchMedia("(min-width: 1024px)").matches) {
             const mobileNavigation = document.getElementById("mobile-navigation");
             const mobileNavigationMenu = document.getElementById("mobile-navigation-menu");
 

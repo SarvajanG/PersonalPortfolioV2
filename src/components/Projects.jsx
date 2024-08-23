@@ -5,7 +5,7 @@ import ProjectItem from "./ProjectItem";
 export default function Projects() {
     return (
         <div id="Projects">
-            <div id="section-title">
+            <div className="section-title">
                 <p>Projects</p>
             </div>
             <div id="project-items-container">

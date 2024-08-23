@@ -3,7 +3,15 @@
     padding: 0;
     font-family: "Play";
     color: whitesmoke;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
+
+a, a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 
 button {
     cursor: pointer;
@@ -46,19 +54,19 @@ button {
     background-color: rgb(47, 187, 230);
 }
 
-#section-title {
+.section-title {
     display: flex;
     align-items: center;
     padding-left: 1.5vw;
     padding-top: 8vh;
-    font-size: 4vw;
+    font-size: 4vmax;
 }
 
 #mobile-navigation, #mobile-navigation-menu {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     #button-container {
         display: none;
     }
@@ -141,6 +149,9 @@ button {
 
 #about-outer-flex img {
     height: 70vh;
+    width: 40vw;
+    object-fit: cover;
+    border-radius: 50px;
 }
 
 #about-inner-flex {
@@ -149,11 +160,45 @@ button {
     align-items: center;
     justify-content: space-between;
     padding-top: 5vh;
-    font-size: 1vw;
+    font-size: 1.5vmax;
+    gap: 1vh;
 }
 
 #about-title {
     font-size: 3vw;
+}
+
+@media (max-width: 1023px) {
+    #about-outer-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw 4vw 3vw 4vw;
+        height: 70vh;
+        width: 90vw;
+    }
+
+    #about-outer-flex img {
+        height: 28vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    
+    #about-inner-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5vw;
+        padding: 0;
+        gap: 2vh;
+    }
+
+    #about-title {
+        font-size: 8vw;
+    }
 }
 
 /*---------------------------------PROJECTS---------------------------------*/
@@ -176,20 +221,18 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-    width: 50vw;
-    font-size: 2vw;
+    font-size: 2vmax;
 }
 
 #project-item-image {
-    height: 25vh;
-    width: 50vw;
+    height: 10vmax;
+    width: 90vmin;
     position: relative;
 }
 
 #project-item-image img {
-    height: 25vh;
-    width: 50vw;
+    height: 10vmax;
+    width: 90vmin;
     object-fit: cover; /*subject to change*/
     border-radius: 30px;
 }
@@ -197,9 +240,9 @@ button {
 .project-item-button {
     position: absolute;
     top: 0;
-    right: 0; /* Position the button on the right side */
-    width: 50%; /* Take up half the width of the image */
-    height: 100%; /* Take up the full height of the image */
+    right: 0; 
+    width: 50%; 
+    height: 100%; 
     background-color: rgba(0, 0, 0, 0); /* invisible background */
     color: rgba(0, 0, 0, 0);
     border: none;
@@ -219,6 +262,13 @@ button {
 .project-item-button:hover {
     background-color: rgba(0, 0, 0, 0.5); /* Darken on hover */
     color: whitesmoke;
+}
+
+@media (max-width: 1024px) {
+    .project-item-button {
+        background-color: rgba(0,0,0,0.1);
+        color: whitesmoke;
+    }
 }
 
 /*---------------------------------CONTACT---------------------------------*/
@@ -243,4 +293,19 @@ button {
 #icon-container img{
     height: 3vh;
     filter: invert(100%);
+}
+
+@media (max-width: 1024px) {
+    #Contact {
+        font-size: 2.5vh;
+        gap: 1vh;
+    }
+    
+    #icon-container {
+        width: 50vw;
+    }
+    
+    #icon-container img{
+        height: 4vh;
+    }
 }

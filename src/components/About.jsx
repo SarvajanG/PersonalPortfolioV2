@@ -4,7 +4,7 @@ import React from "react";
 export default function About() {
     return (
         <div id="About">
-            <div id="section-title">
+            <div className="section-title">
                 <p>About</p>
             </div>
             <div id="about-outer-flex">
